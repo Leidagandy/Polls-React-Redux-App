@@ -1,4 +1,4 @@
-import { _getUsers, _getPolls, _savePoll, _savePollAnswer } from "./_DATA.js";
+import { _getUsers, _getPolls, _savePoll, _savePollAnswer } from "./_DATA.JS";
 import { isObject } from "./helpers";
 
 function flattenPoll(poll) {
