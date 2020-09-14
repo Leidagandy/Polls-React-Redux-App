@@ -13,6 +13,7 @@ export function addAnswer({ authedUser, id, answer }) {
 
 export function handleAddAnswer(answerData) {
   return (dispatch) => {
-    savePollAnswer(answerData).then(() => dispatch(addAnswer(answerData)));
+    savePollAnswer(answerData)
+    .then(() => dispatch(addAnswer(answerData)));
   };
 }

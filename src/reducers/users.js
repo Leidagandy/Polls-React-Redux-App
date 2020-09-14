@@ -1,5 +1,7 @@
 import { RECEIVE_USERS } from "../actions/users";
-import { ADD_POLL, RECEIVE_POLLS } from "../actions/polls";
+import { ADD_POLL } from "../actions/polls";
+import { ADD_ANSWER } from "../actions/answers"
+
 
 export default function users(state = {}, action) {
   switch (action.type) {
@@ -22,6 +24,16 @@ export default function users(state = {}, action) {
           // onto the polls array
         },
       };
+      case ADD_ANSWER :
+        const user = state[action.authedUser] // we can grab the user at state[action.authedUser]
+        return {
+          ...state,
+          [action.authedUser]: {
+            ...user,
+            answers: user.answers.concat([action.id])// add id of the poll 
+            //to the users answers property
+          }
+        }
     default:
       return state;
   }
