@@ -1,5 +1,6 @@
 import * as React from "react";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 export default function Dashboard() {
   //create a local react state
@@ -47,7 +48,7 @@ export default function Dashboard() {
         <ul>
           {questions[list].map((poll) => (
             <li key={poll.id}>
-              <Link to={"polls/${poll.id}"}>{poll.question}</Link>
+              <Link to={`polls/${poll.id}`}>{poll.question}</Link>
             </li>
           ))}
         </ul>

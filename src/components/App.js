@@ -1,5 +1,6 @@
 import * as React from "react";
 import { useSelector, useDispatch } from "react-redux";
+import {BrowserRouter as Router } from "react-router-dom"
 import { handleInitialData } from "../actions/shared";
 // import Leaderboard from "./Leaderboard";
 import Dashboard from "./Dashboard"
@@ -16,10 +17,12 @@ export default function App() {
   // console.log('Store', store)
 
   return (
+    <Router>
     <div>
       {loading === true ? null : (
           <Dashboard />
       )}
     </div>
+    </Router>
   );
 }
