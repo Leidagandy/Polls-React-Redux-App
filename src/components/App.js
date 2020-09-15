@@ -3,7 +3,8 @@ import { useSelector, useDispatch } from "react-redux";
 import {BrowserRouter as Router } from "react-router-dom"
 import { handleInitialData } from "../actions/shared";
 // import Leaderboard from "./Leaderboard";
-import Dashboard from "./Dashboard"
+// import Dashboard from "./Dashboard"
+import AddPoll from "./AddPoll"
 
 export default function App() {
   const dispatch = useDispatch();
@@ -20,7 +21,7 @@ export default function App() {
     <Router>
     <div>
       {loading === true ? null : (
-          <Dashboard />
+          <AddPoll />
       )}
     </div>
     </Router>
