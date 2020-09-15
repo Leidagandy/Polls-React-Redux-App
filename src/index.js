@@ -1,11 +1,14 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import * as React from "react";
+import * as ReactDOM from "react-dom";
 import "./index.css";
-import App from "./App";
+import App from "../src/components/App";
 import { createStore } from "redux";
 import { Provider } from "react-redux";
 import reducer from "./reducers";
-import middleware from "./middleware"
+
+import middleware from "./middleware/index";
+
+// import LoadingBar from "react-redux-loading"
 
 const store = createStore(reducer, middleware);
 

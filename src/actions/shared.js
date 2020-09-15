@@ -1,19 +1,21 @@
-import { getInitialData } from "../utils/api"
-import { setAuthedUser } from "../actions/authedUser"
-import { receiveUsers } from "../actions/users"
-import { receivePolls } from ".. actions.polls"
+import { getInitialData } from '../utils/api'
+import { setAuthedUser } from '../actions/authedUser'
+import { receiveUsers } from '../actions/users'
+import { receivePolls } from '../actions/polls'
+import { showLoading, hideLoading } from 'react-redux-loading'
 
-const AUTHED_ID = "leidagoncalves"
+const AUTHED_ID = 'leidagoncalves'
 
-//action creator
 export function handleInitialData () {
-    return (dispatch) =>  {
+  return (dispatch) => {
+    dispatch(showLoading())
+    
     return getInitialData()
-    .then(({ users, polls }) => {
-        dispatch(receiveUsers(users)) // add user to state
-        dispatch(receivePolls(polls)) // add polls to state
-        dispatch(setAuthedUser(AUTHED_ID)) // set authedUser
-    })
-
-    }
-}
+      .then(({ users, polls }) => {
+        dispatch(hideLoading())
+        dispatch(receiveUsers(users))
+        dispatch(receivePolls(polls))
+        dispatch(setAuthedUser(AUTHED_ID))
+      })
+  }
+} 

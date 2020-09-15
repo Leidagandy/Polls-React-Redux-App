@@ -2,7 +2,7 @@ import { ADD_POLL, RECEIVE_POLLS } from "../actions/polls";
 import { ADD_ANSWER } from "../actions/answers";
 
 export default function polls(state = {}, action) {
-  console.log(action);
+  // console.log(action)
   switch (action.type) {
     case RECEIVE_POLLS:
       return {
@@ -13,7 +13,7 @@ export default function polls(state = {}, action) {
     case ADD_POLL:
       return {
         ...state,
-        [action.poll.id]: action.poll, // the property on action.poll.id
+        [action.poll.id]: action.poll, // the property at action.poll.id
         //will be a whatever action.poll is.
       };
     case ADD_ANSWER:
