@@ -1,7 +1,8 @@
 import * as React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { handleInitialData } from "../actions/shared";
-import Leaderboard from "./Leaderboard";
+// import Leaderboard from "./Leaderboard";
+import Dashboard from "./Dashboard"
 
 export default function App() {
   const dispatch = useDispatch();
@@ -17,7 +18,7 @@ export default function App() {
   return (
     <div>
       {loading === true ? null : (
-          <Leaderboard />
+          <Dashboard />
       )}
     </div>
   );
