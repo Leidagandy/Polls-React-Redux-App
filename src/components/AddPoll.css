@@ -1,0 +1,26 @@
+.add-form {
+  margin: 0 auto;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.btn {
+  max-width: 240px;
+  min-width: 150px;
+  padding: 5px;
+  color: #ffffff;
+  text-align: center;
+  background: black;
+  font-size: 15px;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
