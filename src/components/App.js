@@ -6,6 +6,7 @@ import Leaderboard from "./Leaderboard";
 import Dashboard from "./Dashboard";
 import AddPoll from "./AddPoll";
 import Nav from "./Nav";
+import Poll from "./Poll";
 
 export default function App() {
   const dispatch = useDispatch();
@@ -32,6 +33,9 @@ export default function App() {
             </Route>
             <Route path="/add">
               <AddPoll />
+            </Route>
+            <Route path="/polls/:id">
+              <Poll />
             </Route>
           </div>
         )}
