@@ -1,0 +1,20 @@
+.poll-container {
+  width: 60%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.poll-container li {
+  border: 2px solid #f4cabc;
+  min-width: 600px;
+  margin: 20px;
+  padding: 10px;
+}
+
+.poll-questions {
+  display: flex;
+  justify-content: space-between;
+}

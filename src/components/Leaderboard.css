@@ -4,9 +4,9 @@
   justify-content: space-around;
   align-items: center;
   margin: auto;
-  border: 1px solid #f4cabc;
+  border: 2px solid #f4cabc;
   border-radius: 4px;
-  margin-top: 40px;
+  margin-top: 20px;
   padding: 10px;
 }
 .scores {

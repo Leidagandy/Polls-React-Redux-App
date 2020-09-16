@@ -3,6 +3,7 @@ import { getPercentage, getTextKeys, getVoteKeys } from "../utils/helpers";
 import { handleAddAnswer } from "../actions/answers";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
+import "./Poll.css";
 
 export default function Poll() {
   const { id } = useParams();
@@ -46,10 +47,10 @@ export default function Poll() {
   };
 
   return (
-    <div>
-      <h1>{poll.question}</h1>
+    <div className="poll-container">
+      <h2>{poll.question}</h2>
       <div>
-        By <img src={authorAvatar} alt={`Auhtor's avatar`} />
+        By <img className="avatar" src={authorAvatar} alt={`Auhtor's avatar`} />
       </div>
       <ul>
         {getTextKeys().map((key) => {
@@ -59,7 +60,7 @@ export default function Poll() {
               {vote === null ? (
                 poll[key]
               ) : (
-                <div>
+                <div className="poll-questions">
                   <span>{poll[key]}</span>
                   <span>
                     {getPercentage(count, totalVotes)}%({count})
