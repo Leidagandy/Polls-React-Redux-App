@@ -47,7 +47,7 @@ export default function Poll() {
 
   return (
     <div>
-      <h1>{poll.questions}</h1>
+      <h1>{poll.question}</h1>
       <div>
         By <img src={authorAvatar} alt={`Auhtor's avatar`} />
       </div>

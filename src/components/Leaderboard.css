@@ -1,0 +1,32 @@
+.user-container {
+  display: flex;
+  max-width: 500px;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  border: 1px solid #f4cabc;
+  border-radius: 4px;
+  margin-top: 40px;
+  padding: 10px;
+}
+.scores {
+  padding-top: 10px;
+  border-top: 1px solid #f4cabc;
+}
+
+.score-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-left: 1px solid #f4cabc;
+  padding-left: 20px;
+}
+.circle {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  padding: 10px;
+  background: #e9967a;
+  text-align: center;
+  font-weight: bold;
+}
