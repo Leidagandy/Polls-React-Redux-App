@@ -1,0 +1,15 @@
+.nav {
+    margin: 40px;
+  }
+  
+  .nav a {
+    margin: 5px 10px;
+  }
+  
+  .nav:first-child {
+    padding-left: 50px;
+  }
+  
+  .active {
+    font-weight: 900;
+  }
