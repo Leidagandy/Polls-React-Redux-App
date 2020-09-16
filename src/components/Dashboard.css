@@ -1,0 +1,43 @@
+.dashboard-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin-bottom: 50px;
+  border: none;
+}
+
+.dashboard-toggle button {
+  border: none;
+  background: transparent;
+  font-size: 22px;
+  color: #e9967a;
+}
+
+.dashboard-container {
+  max-width: 1000px;
+  margin: 0px auto;
+}
+
+.dashboard-list {
+  font-size: 20px;
+  letter-spacing: 0.4px;
+  font-weight: 500;
+}
+
+.dashboard-list li {
+  margin: 10px 0;
+  border-top: 1px solid #f4cabc;
+  list-style-type: circle;
+  color: #e9967a;
+  list-style-type: disc;
+}
+
+.dashboard-list a {
+  color: #353434;
+}
+
+.dashboard-list a:hover {
+  font-weight: 600;
+  color: #e9967a;
+}

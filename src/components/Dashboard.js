@@ -1,6 +1,7 @@
 import * as React from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import "./Dashboard.css"
 
 export default function Dashboard() {
   //create a local react state
@@ -27,8 +28,9 @@ export default function Dashboard() {
 
   return (
     <React.Fragment>
-      <div>
+      <div className="dashboard-toggle">
         <button
+        className="dashboard-btn"
           style={{
             textDecoration: list === "unanswered" ? "underline" : null,
           }}
@@ -38,6 +40,7 @@ export default function Dashboard() {
         </button>
         <span> | </span>
         <button
+        className="dashboard-btn"
           style={{
             textDecoration: list === "answered" ? "underline" : null,
           }}
@@ -45,14 +48,17 @@ export default function Dashboard() {
         >
           Answered
         </button>
-        <ul>
+        </div>
+        <div className="dashboard-container">
+        <ul className="dashboard-list">
           {questions[list].map((poll) => (
             <li key={poll.id}>
               <Link to={`polls/${poll.id}`}>{poll.question}</Link>
             </li>
           ))}
         </ul>
-      </div>
+        </div>
+      
     </React.Fragment>
   );
 }
