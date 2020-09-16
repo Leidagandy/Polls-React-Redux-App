@@ -50,7 +50,8 @@ export default function Poll() {
     <div className="poll-container">
       <h2>{poll.question}</h2>
       <div>
-        By <img className="avatar" src={authorAvatar} alt={`Auhtor's avatar`} />
+        Asked by{" "}
+        <img className="avatar" src={authorAvatar} alt={`Auhtor's avatar`} />
       </div>
       <ul>
         {getTextKeys().map((key) => {

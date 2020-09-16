@@ -37,23 +37,23 @@ let users = {
 let polls = {
   "8xf0y6ziyjabvozdd253nd": {
     id: "8xf0y6ziyjabvozdd253nd",
-    question: "Which of the following Psychic ability you would like to have?",
+    question: "Which of the following psychic ability you would like to have?",
     author: "alana_jones",
     timestamp: 1467166872634,
     a: {
-      text: "Expert in Poker",
+      text: "Expert in poker",
       votes: ["alana_jones"],
     },
     b: {
-      text: "‌Seeing Past lives of anyone",
+      text: "‌Seeing past lives of anyone",
       votes: [],
     },
     c: {
-      text: "‌Predict Any Sports match result",
+      text: "‌Predict any sports match result",
       votes: [],
     },
     d: {
-      text: "Hypnotizing Anyone",
+      text: "Hypnotizing anyone",
       votes: [],
     },
   },
@@ -128,7 +128,7 @@ let polls = {
   },
   vthrdm985a262al8qx3do: {
     id: "vthrdm985a262al8qx3do",
-    question: "Where is the best place to live?",
+    question: "If you could live anywhere in the world, where woult it be?",
     author: "leidagoncalves",
     timestamp: 1489579767190,
     a: {

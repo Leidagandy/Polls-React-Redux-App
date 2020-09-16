@@ -15,8 +15,8 @@ code {
 body {
   padding: 0;
   min-height: 100vh;
-  background: #f8f8f8;
-  color:#363636;
+  background: #fcf3f0;
+  color: #606060;
 }
 
 a {
@@ -41,5 +41,3 @@ li {
   border-radius: 50px;
   margin-top: 10px;
 }
-
-
